@@ -198,6 +198,7 @@ class ThreatFox:
 
                             stix_indicator = stix2.Indicator(
                                 id=Indicator.generate_id(pattern_value),
+                                name=ioc_value,
                                 indicator_types=[indicator_type],
                                 pattern_type="stix",
                                 pattern=pattern_value,
